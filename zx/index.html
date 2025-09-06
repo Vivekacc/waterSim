@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,*::before,*::after{
+            overscroll-behavior: none;
+        }
+        body{
+            background-color: brown;
+        }
+        nav{
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            display: flex;
+            justify-content: space-between;
+            font-size: 4rem;
+            z-index: 5;
+        }
+        h1{
+            font-size: 10rem;
+            padding-left: 15rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: capitalize;
+            color: burlywood;
+        }
+        canvas{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <li>mark one</li>
+        <li>mark X</li>
+    </nav>
+    <h1>big F title</h1>
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" ></script>
+<script type="module" src="./main.js"></script>
+</html>

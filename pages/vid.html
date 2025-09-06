@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,*::before,*::after{
+            overscroll-behavior: none;
+        }
+        body{
+            background-color: brown;
+        }
+        nav{
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            height: 60px;
+            justify-content: space-between;
+            z-index: 5;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            text-transform: capitalize;
+        }
+        div{height: 100vh;}
+        h1{ 
+            position: relative;
+            font-size: 10rem;
+            color: white;
+            padding-left: 15rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: capitalize;
+            z-index: 2;
+        }
+        canvas{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+            z-index: 1;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="one.html">mark one</a></li>
+            <li><a href="x.html">mark x</a></li>
+            <li><a href="../index.html">home</a></li>
+        </ul>
+    </nav>
+    <video id="vga" src="/public/176069-854863666.mp4" muted autoplay loop playsinline style="display:none;"></video>
+    <div>
+        <h1>big F title</h1>
+    </div>
+    <div>
+        <h1>big F title</h1>
+    </div>
+</body>
+<script type="module" src="../src/vid.js"></script>
+</html>

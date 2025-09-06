@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *,*::before,*::after{
+            overscroll-behavior: none;
+        }
+        body{
+            background-color: brown;
+        }
+        nav{
+            position: fixed;
+            top: 0;
+            width: 100vw;
+            height: 60px;
+            justify-content: space-between;
+            z-index: 5;
+        }
+        ul{
+            display: flex;
+            justify-content: space-around;
+            list-style: none;
+            text-transform: capitalize;
+        }
+        h1{
+            font-size: 10rem;
+            color: burlywood;
+            padding-left: 15rem;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-transform: capitalize;
+        }
+        canvas{
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100vw;
+            height: 100vh;
+        }
+         #htmlContent {
+      /* width: 800px;
+      height: 400px; */
+      font-family: 'Arial', sans-serif;
+      background: #fb7427;
+      color: #fef4b8;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+    #htmlCanvas { display: none; }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="../index.html">home</a></li>
+            <li><a href="x.html">mark X</a></li>
+            <li><a href="vid.html">mark vid</a></li>
+        </ul>
+    </nav>
+  <div id="htmlContent">
+    <h1>softhorizon</h1>
+    <p>Creative systems for motion orchestration</p>
+  </div>
+  <canvas id="htmlCanvas" ></canvas>
+</body>
+<script type="module" src="../src/one.js"></script>
+</html>
+
+<!-- <!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html> -->
