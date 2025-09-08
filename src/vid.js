@@ -129,6 +129,16 @@ renderer.domElement.addEventListener("mousemove",(e)=>{
 renderer.domElement.addEventListener("mouseleave",(e)=>{
     mouse.set(0,0)
 });
+renderer.domElement.addEventListener("touchmove",(e)=>{
+    const touch = e.touches[0];
+    // console.dir(touch)
+    mouse.x = touch.clientX * window.devicePixelRatio;
+    mouse.y = (window.innerHeight - touch.clientY) * window.devicePixelRatio;
+});
+
+renderer.domElement.addEventListener("touchend",(e)=>{
+    mouse.set(0,0)
+});
 
 // Animation loop
 function animate() {
