@@ -43,15 +43,26 @@
             height: 100vh;
             z-index: 1;
         }
+        #vga{width: 100vw; height: 100vh;}
+        @media screen and (max-width:786px) {
+            .zx{display: none;}
+            div{height: auto;}
+            h1{
+                position: fixed;
+                top: 20%;
+                left: 20%;
+                font-size: 2rem;
+            }
+        }
     </style>
 </head>
 <body>
-    <video id="vga" src="/public/176069-854863666.mp4" muted autoplay loop playsinline style="display:none;"></video>
+    <video id="vga"  src="/public/176069-854863666.mp4" muted autoplay loop playsinline style="display:none;"></video>
     <div>
-        <h1>big F title</h1>
+        <h1 >big F title</h1>
     </div>
-    <div>
-        <h1>big F title</h1>
+    <div class="zx">
+        <h1 class="zx">big F title</h1>
     </div>
 </body>
 <script type="module" src="./src/vid.js"></script>
